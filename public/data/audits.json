@@ -1,1 +1,25 @@
-null
+{
+  "time": "2026-11-20T07:02:32.426Z",
+  "scores": {
+    "course": {
+      "performance": 99,
+      "accessibility": 95
+    },
+    "mdn": {
+      "performance": 99,
+      "accessibility": 88
+    },
+    "monaco": {
+      "performance": 81,
+      "accessibility": 80
+    },
+    "drawio": {
+      "performance": 100,
+      "accessibility": 92
+    },
+    "pages": {
+      "performance": 90,
+      "accessibility": 100
+    }
+  }
+}

@@ -6,7 +6,7 @@
 - [Ночная проверка](https://github.com/Aizenrix/monitoring1/actions/workflows/check.yml)
 - [Сдача в репозитории курса](https://github.com/Aizenrix/angular/tree/main/projects/p3-monitoring)
 
-В `public/data/sites.json` пока пять демонстрационных адресов. Для списка группы замените их адресами GitHub Pages однокурсников, сохраните уникальные латинские `id` и уберите поле `demo`.
+В `public/data/sites.json` перечислены пять публичных сайтов GitHub Pages: руководства Google, спецификация WAI-ARIA, Rust RFC Book, документация клиента Prometheus для Python и спецификация WebAssembly.
 
 ## Локальный запуск
 

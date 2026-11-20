@@ -1,7 +1,7 @@
 [
-  { "id": "course", "name": "Справочник Angular и React", "url": "https://maximbytecamp.github.io/angular_react_makarov/", "demo": true },
-  { "id": "mdn", "name": "Примеры MDN", "url": "https://mdn.github.io/learning-area/", "demo": true },
-  { "id": "monaco", "name": "Редактор Monaco", "url": "https://microsoft.github.io/monaco-editor/", "demo": true },
-  { "id": "drawio", "name": "Редактор диаграмм draw.io", "url": "https://jgraph.github.io/drawio/", "demo": true },
-  { "id": "pages", "name": "GitHub Pages", "url": "https://pages.github.com/", "demo": true }
+  { "id": "google-styleguide", "name": "Руководства по стилю Google", "url": "https://google.github.io/styleguide/" },
+  { "id": "w3c-aria", "name": "Спецификация WAI-ARIA", "url": "https://w3c.github.io/aria/" },
+  { "id": "rust-rfcs", "name": "Rust RFC Book", "url": "https://rust-lang.github.io/rfcs/" },
+  { "id": "prometheus-python", "name": "Клиент Prometheus для Python", "url": "https://prometheus.github.io/client_python/" },
+  { "id": "webassembly", "name": "Спецификация WebAssembly", "url": "https://webassembly.github.io/spec/core/" }
 ]

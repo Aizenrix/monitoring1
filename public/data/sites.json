@@ -3,6 +3,5 @@
   { "id": "mdn", "name": "Примеры MDN", "url": "https://mdn.github.io/learning-area/", "demo": true },
   { "id": "monaco", "name": "Редактор Monaco", "url": "https://microsoft.github.io/monaco-editor/", "demo": true },
   { "id": "drawio", "name": "Редактор диаграмм draw.io", "url": "https://jgraph.github.io/drawio/", "demo": true },
-  { "id": "pages", "name": "GitHub Pages", "url": "https://pages.github.com/", "demo": true },
-  { "id": "monitoring-test", "name": "Проверка оповещения", "url": "https://aizenrix.github.io/monitoring1/proverka-opoveshcheniya-test.html", "demo": true }
+  { "id": "pages", "name": "GitHub Pages", "url": "https://pages.github.com/", "demo": true }
 ]

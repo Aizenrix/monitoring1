@@ -1,25 +1,25 @@
 {
-  "time": "2026-11-20T07:02:32.426Z",
+  "time": "2026-11-20T07:10:59.027Z",
   "scores": {
-    "course": {
+    "google-styleguide": {
       "performance": 99,
-      "accessibility": 95
+      "accessibility": 93
     },
-    "mdn": {
-      "performance": 99,
-      "accessibility": 88
-    },
-    "monaco": {
-      "performance": 81,
-      "accessibility": 80
-    },
-    "drawio": {
-      "performance": 100,
+    "w3c-aria": {
+      "performance": 77,
       "accessibility": 92
     },
-    "pages": {
-      "performance": 90,
-      "accessibility": 100
+    "rust-rfcs": {
+      "performance": 99,
+      "accessibility": 84
+    },
+    "prometheus-python": {
+      "performance": 100,
+      "accessibility": 95
+    },
+    "webassembly": {
+      "performance": 99,
+      "accessibility": 92
     }
   }
 }

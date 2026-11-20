@@ -5,7 +5,11 @@ import { readData, writeData } from './data.mjs'
 
 const [sites, { history }] = await Promise.all([readData('sites.json'), readData('results.json')])
 const scores = {}
-const chrome = await launch({ chromePath: chromium.executablePath(), chromeFlags: ['--headless', '--disable-dev-shm-usage'] })
+const chrome = await launch({
+  chromePath: process.env.CHROME_PATH || chromium.executablePath(),
+  chromeFlags: ['--headless', '--disable-dev-shm-usage'],
+  logLevel: 'error',
+})
 try {
   for (const site of sites) {
     if (history[0]?.checks.find(check => check.id === site.id)?.ok !== true) continue

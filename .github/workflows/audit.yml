@@ -17,20 +17,41 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Измерить скорость и доступность
+        run: |
+          # Chrome из образа Ubuntu использует системный профиль песочницы.
+          export CHROME_PATH="$(command -v google-chrome)"
+          test -x "$CHROME_PATH"
+          npm run audit:sites
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results
+          path: public/data/audits.json
+          if-no-files-found: error
+          retention-days: 1
+  record:
+    needs: audit
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v6
         with:
           ref: main
-      - uses: actions/setup-node@v6
+      - uses: actions/download-artifact@v4
         with:
-          node-version: '24'
-          cache: npm
-      - run: npm ci
-      - run: npx playwright install --with-deps --no-shell chromium
-      - name: Измерить скорость и доступность
-        run: npm run audit:sites
+          name: lighthouse-results
+          path: public/data
       - name: Записать оценки в main
         run: |
           git config user.name 'github-actions[bot]'
@@ -39,7 +60,7 @@ jobs:
           git commit -m 'monitoring: оценки Lighthouse'
           git push origin HEAD:main
   publish:
-    needs: audit
+    needs: record
     permissions:
       contents: read
       pages: write

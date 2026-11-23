@@ -1,12 +1,12 @@
 {
-  "time": "2026-11-20T07:10:59.027Z",
+  "time": "2026-11-23T15:37:33.717Z",
   "scores": {
     "google-styleguide": {
-      "performance": 99,
+      "performance": 98,
       "accessibility": 93
     },
     "w3c-aria": {
-      "performance": 77,
+      "performance": 74,
       "accessibility": 92
     },
     "rust-rfcs": {
